@@ -3,12 +3,15 @@ package Books_lib;
 public class Book {
           private int noOfCopies;
 
-          private String title;
-
-    public void setNoOfCopies(int noOfCopies){
+          Book(int noOfCopies){
               this.noOfCopies = noOfCopies;
-              System.out.println(noOfCopies);
-    }
+          }
+
+          public int getNoOfCopies(){
+              return noOfCopies;
+          }
+
+          private String title;
 
     void settitle(String title){
         this.title = title;

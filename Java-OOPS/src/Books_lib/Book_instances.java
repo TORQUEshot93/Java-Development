@@ -2,13 +2,15 @@ package Books_lib;
 
 public class Book_instances {
     public static void main(String[] args) {
-        Book art_of_computer_programming = new Book();
-        Book effective_Java = new Book();
-        Book clean_Code = new Book();
+        Book art_of_computer_programming = new Book(1000);
+        Book effective_Java = new Book(2343);
+        Book clean_Code = new Book(5634);
 
-        art_of_computer_programming.setNoOfCopies(100);
-        effective_Java.setNoOfCopies(50);
-        clean_Code.setNoOfCopies(234);
+        System.out.println("no of Copies:"+art_of_computer_programming.getNoOfCopies());
+
+//        art_of_computer_programming.setNoOfCopies(100);
+//        effective_Java.setNoOfCopies(50);
+//        clean_Code.setNoOfCopies(234);
 
         art_of_computer_programming.settitle("Java_title_1");
         System.out.println(art_of_computer_programming.getitle());
